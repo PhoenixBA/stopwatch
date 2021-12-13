@@ -1,0 +1,127 @@
+:root {
+  --button-color: rgb(236, 48, 218);
+  --button-color2: rgb(241, 165, 234);
+  --button-color3: rgb(90, 2, 90);
+  --title-color: white;
+}
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer_block {
+  width: 150px;
+  margin-right: 15px;
+}
+
+.timer_block .time {
+  background-color: var(--button-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--title-color);
+  height: 150px;
+  font-size: 95px;
+}
+
+.timer_block .title {
+  background-color: var(--button-color2);
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.buttons .button {
+  border: none;
+  border-radius: 20%;
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10px;
+  width: 180px;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.buttons .button.start, .buttons .button.stop {
+  color: var(--button-color);
+}
+
+.buttons .button.start:hover, .buttons .button.stop:hover {
+  background-color: var(--button-color2);
+  color: var(--title-color);
+}
+
+.buttons .button.pause {
+  color: #8d5387;
+}
+
+.buttons .button.pause:hover {
+  background-color: var(--button-color3);
+  color: var(--title-color);
+}
+
+.buttons .button.new:disabled {
+  cursor: not-allowed;
+  background-color: none;
+}
+
+.results_block {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid var(--button-color2);
+  color: var(--button-color3);
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
